@@ -1,0 +1,10 @@
+env,method,seeds,greedy_eval_return,train_return_last10pct,notes
+FrozenLake-v1,value_iteration,-,0.729,-,438 sweeps
+FrozenLake-v1,qlearning,3,0.734 ± 0.004,0.691,"alpha=0.05, gamma=0.99, episodes=20000"
+FrozenLake-v1,sarsa,3,0.727 ± 0.001,0.682,"alpha=0.05, gamma=0.99, episodes=20000"
+Taxi-v4,value_iteration,-,7.911,-,19 sweeps
+Taxi-v4,qlearning,3,7.911 ± 0.000,7.444,"alpha=0.5, gamma=0.99, episodes=5000"
+Taxi-v4,sarsa,3,7.719 ± 0.087,6.940,"alpha=0.5, gamma=0.99, episodes=5000"
+CliffWalking-v1,value_iteration,-,-13.000,-,15 sweeps
+CliffWalking-v1,qlearning,3,-13.000 ± 0.000,-14.544,"alpha=0.5, gamma=1.0, episodes=500"
+CliffWalking-v1,sarsa,3,-17.000 ± 0.000,-30.703,"alpha=0.5, gamma=1.0, episodes=500"

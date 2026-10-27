@@ -1,0 +1,11 @@
+experiment,algorithm,env,seeds,train_return_last20,greedy_eval_return_20ep
+cartpole,DQN,CartPole-v1,3,235.7 ± 24.4,235.1 ± 70.6
+cartpole,REINFORCE (baseline),CartPole-v1,3,418.4 ± 60.2,500.0 ± 0.0
+cartpole,A2C,CartPole-v1,3,299.7 ± 119.6,387.8 ± 158.7
+cartpole,PPO,CartPole-v1,3,500.0 ± 0.0,500.0 ± 0.0
+ablation,DQN (replay + target),CartPole-v1,3,292.6 ± 101.2,254.7 ± 178.4
+ablation,Double DQN,CartPole-v1,3,265.2 ± 42.1,447.2 ± 40.4
+ablation,no target network,CartPole-v1,3,9.3 ± 0.1,9.2 ± 0.1
+ablation,no replay buffer,CartPole-v1,3,165.3 ± 69.4,139.4 ± 24.0
+pendulum,DDPG,Pendulum-v1,3,-142.4 ± 11.0,-146.7 ± 2.3
+lunar,PPO,LunarLander-v3,3,203.0 ± 58.0,245.0 ± 25.8
