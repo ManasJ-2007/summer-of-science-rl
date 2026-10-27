@@ -9,3 +9,14 @@ ablation,no target network,CartPole-v1,3,9.3 ± 0.1,9.2 ± 0.1
 ablation,no replay buffer,CartPole-v1,3,165.3 ± 69.4,139.4 ± 24.0
 pendulum,DDPG,Pendulum-v1,3,-142.4 ± 11.0,-146.7 ± 2.3
 lunar,PPO,LunarLander-v3,3,203.0 ± 58.0,245.0 ± 25.8
+reinforce,REINFORCE (baseline),CartPole-v1,3,418.4 ± 60.2,500.0 ± 0.0
+reinforce,REINFORCE (no baseline),CartPole-v1,3,392.5 ± 132.1,400.1 ± 141.0
+dqn_tuning,default,CartPole-v1,3,247.3 ± 82.7,377.2 ± 163.7
+dqn_tuning,ε-decay 10% of steps,CartPole-v1,3,391.0 ± 82.8,429.4 ± 99.8
+dqn_tuning,ε-decay 50% of steps,CartPole-v1,3,86.2 ± 14.9,223.7 ± 196.0
+dqn_tuning,batch 32,CartPole-v1,3,214.2 ± 109.1,252.2 ± 172.8
+dqn_tuning,batch 128,CartPole-v1,3,237.4 ± 164.2,252.1 ± 176.9
+dqn_tuning,target update 100,CartPole-v1,3,353.8 ± 113.5,364.7 ± 179.5
+dqn_tuning,target update 2000,CartPole-v1,3,153.3 ± 22.0,150.4 ± 36.2
+lunar_pg,REINFORCE (baseline),LunarLander-v3,3,133.0 ± 67.1,107.5 ± 60.9
+lunar_pg,A2C,LunarLander-v3,3,-28.1 ± 13.3,8.9 ± 24.0

@@ -1,0 +1,16 @@
+{
+  "policy after 100 training episodes": {
+    "policy_mean_return": 113.9,
+    "trace_cov_no_baseline": 2625087.8,
+    "trace_cov_with_baseline": 1889024.9,
+    "variance_reduction_pct": 28.0,
+    "cosine_similarity_of_mean_gradients": 1.0
+  },
+  "policy after 300 training episodes": {
+    "policy_mean_return": 456.4,
+    "trace_cov_no_baseline": 20448320.0,
+    "trace_cov_with_baseline": 9476057.0,
+    "variance_reduction_pct": 53.7,
+    "cosine_similarity_of_mean_gradients": 0.993
+  }
+}

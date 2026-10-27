@@ -1,0 +1,155 @@
+{
+  "cartpole / DQN": {
+    "seeds_solved": "1/3",
+    "median_steps_to_solve": 26472,
+    "steps_per_seed": [
+      26472,
+      null,
+      null
+    ]
+  },
+  "cartpole / REINFORCE (baseline)": {
+    "seeds_solved": "3/3",
+    "median_steps_to_solve": 56829,
+    "steps_per_seed": [
+      56829,
+      55366,
+      57859
+    ]
+  },
+  "cartpole / A2C": {
+    "seeds_solved": "2/3",
+    "median_steps_to_solve": 80855,
+    "steps_per_seed": [
+      85781,
+      75929,
+      null
+    ]
+  },
+  "cartpole / PPO": {
+    "seeds_solved": "3/3",
+    "median_steps_to_solve": 38702,
+    "steps_per_seed": [
+      32480,
+      38702,
+      45618
+    ]
+  },
+  "reinforce / REINFORCE (baseline)": {
+    "seeds_solved": "3/3",
+    "median_steps_to_solve": 56829,
+    "steps_per_seed": [
+      56829,
+      55366,
+      57859
+    ]
+  },
+  "reinforce / REINFORCE (no baseline)": {
+    "seeds_solved": "3/3",
+    "median_steps_to_solve": 55641,
+    "steps_per_seed": [
+      55641,
+      74835,
+      48633
+    ]
+  },
+  "ablation / DQN (replay + target)": {
+    "seeds_solved": "0/3",
+    "median_steps_to_solve": null,
+    "steps_per_seed": [
+      null,
+      null,
+      null
+    ]
+  },
+  "ablation / Double DQN": {
+    "seeds_solved": "0/3",
+    "median_steps_to_solve": null,
+    "steps_per_seed": [
+      null,
+      null,
+      null
+    ]
+  },
+  "ablation / no target network": {
+    "seeds_solved": "0/3",
+    "median_steps_to_solve": null,
+    "steps_per_seed": [
+      null,
+      null,
+      null
+    ]
+  },
+  "ablation / no replay buffer": {
+    "seeds_solved": "0/3",
+    "median_steps_to_solve": null,
+    "steps_per_seed": [
+      null,
+      null,
+      null
+    ]
+  },
+  "dqn_tuning / default": {
+    "seeds_solved": "0/3",
+    "median_steps_to_solve": null,
+    "steps_per_seed": [
+      null,
+      null,
+      null
+    ]
+  },
+  "dqn_tuning / ε-decay 10% of steps": {
+    "seeds_solved": "1/3",
+    "median_steps_to_solve": 56323,
+    "steps_per_seed": [
+      null,
+      56323,
+      null
+    ]
+  },
+  "dqn_tuning / ε-decay 50% of steps": {
+    "seeds_solved": "0/3",
+    "median_steps_to_solve": null,
+    "steps_per_seed": [
+      null,
+      null,
+      null
+    ]
+  },
+  "dqn_tuning / batch 32": {
+    "seeds_solved": "0/3",
+    "median_steps_to_solve": null,
+    "steps_per_seed": [
+      null,
+      null,
+      null
+    ]
+  },
+  "dqn_tuning / batch 128": {
+    "seeds_solved": "1/3",
+    "median_steps_to_solve": 57244,
+    "steps_per_seed": [
+      57244,
+      null,
+      null
+    ]
+  },
+  "dqn_tuning / target update 100": {
+    "seeds_solved": "2/3",
+    "median_steps_to_solve": 37138,
+    "steps_per_seed": [
+      null,
+      30738,
+      43539
+    ]
+  },
+  "dqn_tuning / target update 2000": {
+    "seeds_solved": "0/3",
+    "median_steps_to_solve": null,
+    "steps_per_seed": [
+      null,
+      null,
+      null
+    ]
+  }
+}

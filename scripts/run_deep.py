@@ -47,6 +47,25 @@ EXPERIMENTS = {
     "lunar": {
         "PPO": ("LunarLander-v3", train_ppo, dict(total_steps=1_000_000, ent_coef=0.01), "pi"),
     },
+    # Week 6: does the learned baseline matter, and how do REINFORCE / A2C compare with PPO on LunarLander?
+    "reinforce": {
+        "REINFORCE (baseline)": ("CartPole-v1", train_reinforce, dict(episodes=1_000), "pi"),
+        "REINFORCE (no baseline)": ("CartPole-v1", train_reinforce, dict(episodes=1_000, baseline=False), "pi"),
+    },
+    "lunar_pg": {
+        "REINFORCE (baseline)": ("LunarLander-v3", train_reinforce, dict(episodes=3_000), "pi"),
+        "A2C": ("LunarLander-v3", train_a2c, dict(total_steps=1_000_000), "pi"),
+    },
+    # Week 5: one-at-a-time sensitivity around the default DQN (eps_frac=0.2, batch=64, target_update=500)
+    "dqn_tuning": {
+        "default": ("CartPole-v1", train_dqn, dict(total_steps=60_000), "q"),
+        "ε-decay 10% of steps": ("CartPole-v1", train_dqn, dict(total_steps=60_000, eps_frac=0.1), "q"),
+        "ε-decay 50% of steps": ("CartPole-v1", train_dqn, dict(total_steps=60_000, eps_frac=0.5), "q"),
+        "batch 32": ("CartPole-v1", train_dqn, dict(total_steps=60_000, batch_size=32), "q"),
+        "batch 128": ("CartPole-v1", train_dqn, dict(total_steps=60_000, batch_size=128), "q"),
+        "target update 100": ("CartPole-v1", train_dqn, dict(total_steps=60_000, target_update=100), "q"),
+        "target update 2000": ("CartPole-v1", train_dqn, dict(total_steps=60_000, target_update=2000), "q"),
+    },
 }
 
 
