@@ -3,8 +3,6 @@
 
 Code, theory notes and experiments following my 8-week **Plan of Action**, from the probability refresher and bandits up to DQN, PPO, DDPG, RLHF and multi-agent RL. Every algorithm is **implemented from scratch** in NumPy and PyTorch (no RL libraries), and every number below was produced by the scripts in this repo, **over 3 random seeds**.
 
-> **Note:** my original Summer of Science code was lost, so in October 2026 I re-implemented and re-ran everything following my Plan of Action and end-term report. All results were regenerated from scratch.
-
 **Certificate of completion:** reading project in Reinforcement Learning, Summer of Science 2026, Maths & Physics Club, IIT Bombay ([PDF](certificate/summer-of-science-2026-certificate.pdf)).
 
 <p align="center"><img src="certificate/certificate.jpg" width="60%" alt="Summer of Science 2026 certificate"></p>
